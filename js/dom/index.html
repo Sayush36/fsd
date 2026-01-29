@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <form>
+    <label>Enter Name:</label><input type="text" id="name"><br><br>
+    <label>Branch:</label><input type="text" id="branch"><br><br>
+    <label>College:</label><input type="text" id="colleg"><br><br>
+    <label>University:</label><input type="text" id="university"><br><br>
+     <button id="h1">display</button>
+     <br>
+     <div id="h2"></div>
+     <script>
+      const  handle=document.getElementById("h1")
+       const  name=document.getElementById("h2")
+       const ab=document.getElementById("name")
+       const ab1=document.getElementById("branch")
+       const ab2=document.getElementById("colleg")
+       const ab3=document.getElementById("university")
+             handle.addEventListener("click",()=>{
+        event.preventDefault();
+        name.innerHTML=`Name:${ab.value}<br>Branch:${ab1.value}<br>College:${ab2.value}<br>University:${ab3.value}`
+        
+        name.style.width="300px"
+      name.style.border="2px solid black"
+      name.style.height="300px"
+      name.style.borderRadius="5px"
+        name.flexDirecection="column"
+      
+      name.style.color="blue"
+      name.style.backgroundColor="chocolate"
+      name.style.padding="10px"
+    })
+     </script>
+  </form>
+</body>
+</html>
